@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1169
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDocToMarkdown", "XmlDocToMarkdown\XmlDocToMarkdown.csproj", "{6A3E4575-5B6F-4A1F-953A-F6438AA070A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmlDocToMarkdownTest", "XmlDocToMarkdownTest\XmlDocToMarkdownTest.csproj", "{FB89CAA0-E326-4797-A5EA-B93B768DF99D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A3E4575-5B6F-4A1F-953A-F6438AA070A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A3E4575-5B6F-4A1F-953A-F6438AA070A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A3E4575-5B6F-4A1F-953A-F6438AA070A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A3E4575-5B6F-4A1F-953A-F6438AA070A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FB89CAA0-E326-4797-A5EA-B93B768DF99D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FB89CAA0-E326-4797-A5EA-B93B768DF99D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FB89CAA0-E326-4797-A5EA-B93B768DF99D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FB89CAA0-E326-4797-A5EA-B93B768DF99D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EFCAD8C1-F0D5-482B-BFD8-B64FA5789533}
+	EndGlobalSection
+EndGlobal
