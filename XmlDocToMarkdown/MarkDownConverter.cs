@@ -16,6 +16,8 @@ namespace XmlDocToMarkdown.Model
             reader = XmlReader.Create(stream);
 
             reader.MoveToContent();
+
+            elements = new List<IElement>();
             while(reader.Read() && !reader.EOF)
             {
                 AssemblyElement assembly = new AssemblyElement(reader);
@@ -23,10 +25,11 @@ namespace XmlDocToMarkdown.Model
             }
         }
 
-        public List<string> ToMarkdown()
+        public string ToMarkdown()
         {
-            return elements.Select(element => element.ToMarkdown())
-                .ToList();
+            IList<string> output = elements.Select(element => element.ToMarkdown()).ToList();
+
+            return string.Join("\n\n", output);
         }
     }
 }

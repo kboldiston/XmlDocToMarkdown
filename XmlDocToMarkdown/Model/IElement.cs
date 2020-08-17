@@ -4,7 +4,7 @@ namespace XmlDocToMarkdown.Model
 {
     public interface IElement
     {
-        IElement Create(string name);
+        IElement Create(string elementName);
 
         string ToMarkdown();
 

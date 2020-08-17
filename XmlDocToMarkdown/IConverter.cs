@@ -1,9 +1,7 @@
-﻿using System.Collections.Generic;
-
-namespace XmlDocToMarkdown.Model
+﻿namespace XmlDocToMarkdown.Model
 {
     public interface IConverter
     {
-        List<string> ToMarkdown();
+        string ToMarkdown();
     }
 }
