@@ -27,13 +27,13 @@ namespace XmlDocToMarkdown.Model
             {
                 members = new List<IElement>();
 
-                reader.Read();
-                while(reader.LocalName == "member")
+                ReadToNextElement();
+                while (reader.LocalName == "member")
                 {
                     IElement member = new MemberElement(reader).Create("member");
                     members.Add(member);
 
-                    reader.Read();
+                    reader.ReadToNextSibling("member");
                 }
             }
 
@@ -49,7 +49,7 @@ namespace XmlDocToMarkdown.Model
         {
             IEnumerable<string> output = members.Select(element => element.ToMarkdown());
             
-            return string.Join("\n\n", output);
+            return string.Join($@"\n\n", output);
         }
     }
 }

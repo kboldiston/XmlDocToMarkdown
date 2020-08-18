@@ -26,5 +26,13 @@ namespace XmlDocToMarkdown.Model
 
             return "";
         }
+
+        protected void ReadToNextElement()
+        {
+            while(reader.Read() && !reader.EOF)
+            {
+                if (reader.IsStartElement()) return;
+            }
+        }
     }
 }

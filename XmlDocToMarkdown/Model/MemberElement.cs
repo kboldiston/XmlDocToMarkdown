@@ -22,8 +22,10 @@ namespace XmlDocToMarkdown.Model
         {
             if (reader.LocalName == elementName)
             {
-                reader.ReadAttributeValue();
-                name = reader.Value;
+                if (reader.MoveToNextAttribute())
+                {
+                    name = reader.Value;
+                }
             }
 
             else
@@ -36,7 +38,7 @@ namespace XmlDocToMarkdown.Model
 
         public string ToMarkdown()
         {
-            return $@"#### {name} <br/>";
+            return $@"#### {name} \n\n";
         }
     }
 }
